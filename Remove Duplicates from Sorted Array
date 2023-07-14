@@ -1,0 +1,13 @@
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        int i =0;
+//two pointer // 
+        for(int j = 1;j<nums.length;j++){\
+// if i is not equal to j , w'll add that value to i+1
+            if(nums[i]!= nums[j]){
+                nums[i+1]=nums[j];
+                i++;
+            }
+        }return i+1;
+    }
+}
